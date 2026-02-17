@@ -1,2 +1,6 @@
 Regular Expression or a regex
-are a feature supported by many different programming languages
+are a feature supported by many different programming languages.
+A regular expression is a special syntax to create a "pattern", which you can then use to check against a string, extract text, or more.
+Basic regular expression:
+const regex = /freeCodeCamp/;
+This particular regular expression will match the text freeCodeCamp, with capital C's, anywhere in a string.
