@@ -4,3 +4,5 @@ A regular expression is a special syntax to create a "pattern", which you can th
 Basic regular expression:
 const regex = /freeCodeCamp/;
 This particular regular expression will match the text freeCodeCamp, with capital C's, anywhere in a string.
+
+New
