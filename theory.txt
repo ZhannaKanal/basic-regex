@@ -37,3 +37,11 @@ If we run it, we get an array back. But it's a strange looking array.
 The groups property would show any captured groups. 
 The index property tells you at what character in the string the match was found. In our case , it's the beginning of the string.
 The input property tells you the string the match() method was called on.
+const regex = /freeCodeCamp/;
+console.log("freeCodeCamp".match(regex)); // ['freeCodeCamp', index: 0, input: 'freeCodeCamp', groups: undefined]
+console.log("freeCodeCamp is great".match(regex)); // ['freeCodeCamp', index: 0, input: 'freeCodeCamp is great', groups: undefined]
+console.log("I love freeCodeCamp".match(regex)); // ['freeCodeCamp', index: 7, input: 'I love freeCodeCamp', groups: undefined]
+console.log("freecodecamp".match(regex)); // null
+console.log("FREECODECAMP".match(regex)); // null
+console.log("free".match(regex)); // null
+the input and index have changed depending on the string provided
