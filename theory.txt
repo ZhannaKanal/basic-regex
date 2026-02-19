@@ -73,3 +73,11 @@ The caret(^) anchor, at the beginning of the regular expression, says "match the
 const start = /^freecodecamp/i;
 The dollar sign ($) anchor, at the end of the regular expression, says "match the end of the string"
 const end = /freeCodeCamp$/i;
+You can make a regex handle multiple lines with the m flag, multi-line modifier.
+const start = /^freecodecamp/i;
+const end = /freecodecamp$/i;
+const string = `I really love
+freecodecamp
+it's my favorite`;
+console.log(start.test(string)) // true
+console.log(end.text(string)) // true
