@@ -49,4 +49,14 @@ const regex = /freecodecamp/;
 const str = "freecodecamp is rly kewl";
 const replaced = str.replace(regex, "freeCodeCamp");
 console.log(replaced);
-repalce() method returns the updated string with the matching pattern replaced
+repalce() method returns the updated string with the matching pattern replaced.
+
+Regular Expression Modifiers used for Searching
+Modifiers, often referred to as "flags", modify the behavior of a regular ecpression.
+If you remember, the all-lowercase and all-uppercase freeCodeCamp strings failed to match the pattern.
+This is, because, by default, regular expressions are case-sensitive.
+but what will be if we add i to the end of regex;
+The i flag makes a regex ignore a case.
+const regex = /freeCodeCamp/i;
+console.log(regex.test("freecodecamp")); // true
+console.log(regex.test("FREECODECAMP")); // true
