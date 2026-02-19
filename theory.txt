@@ -71,3 +71,5 @@ When a regular expression is global, it gets a new property called lastIndex.
 console.log(regex.lastIndex) //0
 The caret(^) anchor, at the beginning of the regular expression, says "match the start of the string"
 const start = /^freecodecamp/i;
+The dollar sign ($) anchor, at the end of the regular expression, says "match the end of the string"
+const end = /freeCodeCamp$/i;
