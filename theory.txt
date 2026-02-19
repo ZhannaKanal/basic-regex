@@ -45,3 +45,8 @@ console.log("freecodecamp".match(regex)); // null
 console.log("FREECODECAMP".match(regex)); // null
 console.log("free".match(regex)); // null
 the input and index have changed depending on the string provided
+const regex = /freecodecamp/;
+const str = "freecodecamp is rly kewl";
+const replaced = str.replace(regex, "freeCodeCamp");
+console.log(replaced);
+repalce() method returns the updated string with the matching pattern replaced
