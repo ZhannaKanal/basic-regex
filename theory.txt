@@ -60,3 +60,12 @@ The i flag makes a regex ignore a case.
 const regex = /freeCodeCamp/i;
 console.log(regex.test("freecodecamp")); // true
 console.log(regex.test("FREECODECAMP")); // true
+The g flag, global modifier, allows your regular expression to match a pattern more than once.
+const regex = /freeCodeCamp/gi;
+console.log(regex.test("freeCodeCamp")); // true
+console.log(regex.test("freeCodeCamp is great")); // false
+console.log(regex.test("I love freeCodeCamp")); // true
+console.log(regex.test("freecodecamp")); // false
+console.log(regex.test("FREECODECAMP")); // true
+When a regular expression is global, it gets a new property called lastIndex.
+console.log(regex.lastIndex) //0
