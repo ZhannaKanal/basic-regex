@@ -69,3 +69,5 @@ console.log(regex.test("freecodecamp")); // false
 console.log(regex.test("FREECODECAMP")); // true
 When a regular expression is global, it gets a new property called lastIndex.
 console.log(regex.lastIndex) //0
+The caret(^) anchor, at the beginning of the regular expression, says "match the start of the string"
+const start = /^freecodecamp/i;
