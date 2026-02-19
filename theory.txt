@@ -4,5 +4,5 @@ A regular expression is a special syntax to create a "pattern", which you can th
 Basic regular expression:
 const regex = /freeCodeCamp/;
 This particular regular expression will match the text freeCodeCamp, with capital C's, anywhere in a string.
-
-New
+test() method is present on RegExp objects, which are objects representing a regular expression(such as the one we just defined).
+The test() method accepts a string, which is the string to test for matches against the regular expression. 
