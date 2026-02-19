@@ -81,3 +81,17 @@ freecodecamp
 it's my favorite`;
 console.log(start.test(string)) // true
 console.log(end.text(string)) // true
+The d flag, indices modifier, expands the information you get in a match object.
+const regex = /freecodecamp/di;
+const string = "we love freecodecamp isn't freecodecamp great?";
+console.log(string.match(regex)) //
+// [
+//   'freecodecamp',
+//   index: 8,
+//   input: "we love freecodecamp isn't freecodecamp great?",
+//   groups: undefined,
+//   indices: [
+//     0: [8, 20],
+//     groups: undefined
+//   ]
+// ]
