@@ -10,3 +10,14 @@ const regex = /freeCodeCamp/;
 const test = regex.test("e");
 console.log(test);
 test() method returned false because the string e doesnot match the pattern freeCodeCamp. Even though the pattern freeCodeCamp includes the letter e, that's the opposite direction of how regular expressions work.
+F/e:
+const regex = /freeCodeCamp/;
+console.log(regex.test("freeCodeCamp")); //true
+console.log(regex.test("freeCodeCamp is great")); //true
+console.log(regex.test("I love freeCodeCamp")); //true
+console.log(regex.test("freecodecamp")); //false
+console.log(regex.test("FREECODECAMP")); //false
+console.log(regex.test("free")); // false
+console.log(regex.test("code")); //false 
+console.log(regex.test("camp")); //false
+The test() method returns a boolean, indicating whether the string matches the regular expression at all.
