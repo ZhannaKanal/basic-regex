@@ -21,3 +21,6 @@ console.log(regex.test("free")); // false
 console.log(regex.test("code")); //false 
 console.log(regex.test("camp")); //false
 The test() method returns a boolean, indicating whether the string matches the regular expression at all.
+
+match() method accepts a regular expression, although you can also pass a string which will be constructed into a regular expression.
+match() returns the match array for the string.
