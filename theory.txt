@@ -6,3 +6,7 @@ const regex = /freeCodeCamp/;
 This particular regular expression will match the text freeCodeCamp, with capital C's, anywhere in a string.
 test() method is present on RegExp objects, which are objects representing a regular expression(such as the one we just defined).
 The test() method accepts a string, which is the string to test for matches against the regular expression. 
+const regex = /freeCodeCamp/;
+const test = regex.test("e");
+console.log(test);
+test() method returned false because the string e doesnot match the pattern freeCodeCamp. Even though the pattern freeCodeCamp includes the letter e, that's the opposite direction of how regular expressions work.
