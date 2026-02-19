@@ -99,3 +99,5 @@ The u flag, unicode modifier, expands the functionality of a regular expression 
 const regex = /🍎/u;
 const str = "I have an apple 🍎";
 console.log(regex.test(str)); // true
+The y flag, sticky modifier behaves very similarity to the global modifier, will return null and reset the lastIndex to 0 if there is not immediately a match at the previous lastIndex.
+The global regular expression will start from lastIndex and search the entire remainder of the string for another match
