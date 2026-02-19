@@ -24,3 +24,13 @@ The test() method returns a boolean, indicating whether the string matches the r
 
 match() method accepts a regular expression, although you can also pass a string which will be constructed into a regular expression.
 match() returns the match array for the string.
+const regex = /freeCodeCamp/;
+const match = "freeCodeCamp".match(regex);
+console.log(match);
+If we run it, we get an array back. But it's a strange looking array.
+[
+    'freeCodeCamp',
+    index: 0,
+    input: 'freeCodeCamp',
+    groups: undefined
+]
