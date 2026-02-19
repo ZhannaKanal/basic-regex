@@ -95,3 +95,7 @@ console.log(string.match(regex)) //
 //     groups: undefined
 //   ]
 // ]
+The u flag, unicode modifier, expands the functionality of a regular expression to allow it to match special unicode characters.
+const regex = /🍎/u;
+const str = "I have an apple 🍎";
+console.log(regex.test(str)); // true
