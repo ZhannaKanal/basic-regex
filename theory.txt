@@ -161,3 +161,4 @@ To match any letter from a through z, you can write them by or operator.
 Or you could write like \w, which represents any word character.
 const regex = /\w/;
 A word character is defined as any letter, from a to z, or a number from 0 to 9, or the underscore(_) character.
+\s will match any whitespace, including new lines, spaces, tabs, and special unicode space characters.
