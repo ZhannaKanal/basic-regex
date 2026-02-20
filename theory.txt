@@ -154,3 +154,6 @@ const regex = /a./;
 It's helpful when you are looking for a specific patterns in a string, but dont know what might be between those two patterns.
 If you want to match a numerical character, you might have to write out every possible digit, separating them with the or operator (|);
 const regex = /0|1|2|3|4|5|6|7|8|9/;
+If we write backslash(\) followed by a d character:
+cosnt regex = /\d/;
+This regex will match the exact same pattern as our previous expression: a single numerical character anywhere in the string.
