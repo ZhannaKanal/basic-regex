@@ -173,3 +173,9 @@ if you want version without underscore
 const ragex = /[a-zA-Z0-9]/;
 if you want match a literal hyphen, you need to place a hyphen at the brginning or at the end of the class
 const regex = /[-a-zA-Z0-9]/;
+
+Lookahead and Lookbehind Assertions
+allow you to match specific patterns based on the presence or lack of surrounding patterns.
+Positive lookahead assertion will match a pattern when the pattern is followed by another pattern.
+const regex = /free(?=code)/i; // matches the word free if it is followed by code
+
