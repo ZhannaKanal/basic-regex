@@ -164,3 +164,12 @@ A word character is defined as any letter, from a to z, or a number from 0 to 9,
 \s will match any whitespace, including new lines, spaces, tabs, and special unicode space characters.
 const regex = /\D/;
 This doesnt match a numerical character, matches any single character that is not a numerical character.
+If you want to match more specific subsets of characters
+const regex = /[abcdf]/;
+this will match a single char that is in the list a, b, c, d, f
+const regex = /[a-d]/; same as [abcd]
+const regex = /[a-zA-Z]/;
+if you want version without underscore
+const ragex = /[a-zA-Z0-9]/;
+if you want match a literal hyphen, you need to place a hyphen at the brginning or at the end of the class
+const regex = /[-a-zA-Z0-9]/;
