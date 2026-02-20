@@ -123,3 +123,24 @@ Iterator has a next() method, if we call matched.next(), the result will
         input: "freecodecamp is the best we love freecodecamp"
     ]
 }
+but matchAll() method finds at one time only one of match,
+to extract all of the matches at once by converting it to an array.
+This is achieved by calling Array.from() and passing your iterator as the argument.
+const regex = /freecodecamp/g;
+const str = "freecodecamp is the best we love freecodecamp";
+const matched = str.matchAll(regex);
+console.log(Array.from(matched));
+finally the result will be 
+// [
+//   'freecodecamp',
+//   index: 0,
+//   input: 'freecodecamp is the best we love freecodecamp',
+//   groups: undefined
+// ]
+//
+// [
+//   'freecodecamp',
+//   index: 33,
+//   input: 'freecodecamp is the best we love freecodecamp',
+//   groups: undefined
+// ]
