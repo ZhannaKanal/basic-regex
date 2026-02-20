@@ -157,3 +157,7 @@ const regex = /0|1|2|3|4|5|6|7|8|9/;
 If we write backslash(\) followed by a d character:
 cosnt regex = /\d/;
 This regex will match the exact same pattern as our previous expression: a single numerical character anywhere in the string.
+To match any letter from a through z, you can write them by or operator.
+Or you could write like \w, which represents any word character.
+const regex = /\w/;
+A word character is defined as any letter, from a to z, or a number from 0 to 9, or the underscore(_) character.
