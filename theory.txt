@@ -178,4 +178,5 @@ Lookahead and Lookbehind Assertions
 allow you to match specific patterns based on the presence or lack of surrounding patterns.
 Positive lookahead assertion will match a pattern when the pattern is followed by another pattern.
 const regex = /free(?=code)/i; // matches the word free if it is followed by code
-
+console.log(regex.test("freeCodeCamp")); // true
+console.log(regex.test("free code camp")); // false
