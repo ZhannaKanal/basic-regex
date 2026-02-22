@@ -194,3 +194,9 @@ const regex = /(?<=free)code/i;
 console.log(regex.test("freeCodeCamp")); // true
 console.log(regex.test("free code camp")); // false
 matches the first string because code is immediately preceded by free
+To match code when it is NOT preceded by free, we can use a negative lookbehind.
+is defined with ?<!
+const regex = /(?<!free)code/i;
+console.log(regex.test("freeCodeCamp")); // false
+console.log(regex.test("free code camp")); // true
+this would match any occurrences of code that is NOT immediately preceded by free
