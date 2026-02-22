@@ -190,4 +190,7 @@ console.log(regex.test("free code camp")); // true
 Lookbehind assertions function similarly to lookahead assertions, except that,
 instead of matching conditionally based on a following pattern, they match conditionally based on a preceding pattern.
 Positive lookahead is denoted with ?<= instead of ?=
-const 
+const regex = /(?<=free)code/i;
+console.log(regex.test("freeCodeCamp")); // true
+console.log(regex.test("free code camp")); // false
+matches the first string because code is immediately preceded by free
