@@ -215,3 +215,8 @@ const regex = /^\d{4}$/;
 the number 4 means "match the previous character exactly four times"
 console.log(regex.test("123")); // false
 console.log(regex.test("1234")); // true
+The identification code only needs to be a minimum of four digits.
+To allow for four or more digits, add a comma after the number in your quantifier
+const regex = /^\d{4,}$/;
+console.log(regex.test("123")); // false
+console.log(regex.test("12345")); // true
