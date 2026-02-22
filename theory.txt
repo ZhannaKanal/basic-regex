@@ -180,3 +180,9 @@ Positive lookahead assertion will match a pattern when the pattern is followed b
 const regex = /free(?=code)/i; // matches the word free if it is followed by code
 console.log(regex.test("freeCodeCamp")); // true
 console.log(regex.test("free code camp")); // false
+If you want to match the presence of free when it is NOT followed by code,
+you can turn your positive lookahead into a negative lookahead to invert the behavior.
+To do this, change your ?= to ?!
+const regex = /free(?!code)/i;
+console.log(regex.test("freeCodeCamp")); // false
+console.log(regex.test("free code camp")); // true
