@@ -212,3 +212,6 @@ const regex = /^\d\d\d\d$/;
 It will match four numerical characters. But doing like that, write out the same class multiple times, you can give it a quantifier.
 Quantifiers are defined by curly braces containing one or two numbers.
 const regex = /^\d{4}$/;
+the number 4 means "match the previous character exactly four times"
+console.log(regex.test("123")); // false
+console.log(regex.test("1234")); // true
