@@ -200,3 +200,8 @@ const regex = /(?<!free)code/i;
 console.log(regex.test("freeCodeCamp")); // false
 console.log(regex.test("free code camp")); // true
 this would match any occurrences of code that is NOT immediately preceded by free
+
+Regex.prototype.test only confirms whether a string matches the regular expression.
+const regex = /(?<!free)code/i;
+console.log("freeCodeCamp".match(regex)); // null
+console.log("free code camp".match(regex)); // ['code', index: 5, input: 'free code camp', groups: undefined]
