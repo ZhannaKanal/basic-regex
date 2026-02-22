@@ -220,3 +220,7 @@ To allow for four or more digits, add a comma after the number in your quantifie
 const regex = /^\d{4,}$/;
 console.log(regex.test("123")); // false
 console.log(regex.test("12345")); // true
+If you want do regex minimum 4 maximum 6 digit
+const regex = /^\d{4,6}$/;
+console.log(regex.test("123456")); // true
+console.log(regex.test("1234567")); // false
