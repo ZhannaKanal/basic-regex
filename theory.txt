@@ -225,4 +225,6 @@ const regex = /^\d{4,6}$/;
 console.log(regex.test("123456")); // true
 console.log(regex.test("1234567")); // false
 const regex = /^[a-zA-Z]\d{4,6}$/; //Identifiers can start with a letter. 
-But now we mandate the presence of a letter. 
+But now we mandate the presence of a letter. To make it optional, you can use the quantifier syntax with 0 as the minimum,
+and 1 as the maximum
+const regex = /^[a-zA-Z]{0,1}\d{4,6}$/;
