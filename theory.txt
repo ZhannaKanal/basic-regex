@@ -228,3 +228,6 @@ const regex = /^[a-zA-Z]\d{4,6}$/; //Identifiers can start with a letter.
 But now we mandate the presence of a letter. To make it optional, you can use the quantifier syntax with 0 as the minimum,
 and 1 as the maximum
 const regex = /^[a-zA-Z]{0,1}\d{4,6}$/;
+But there's actually a special shorthand quantifier for a single operational char - the question mark(?).
+Let's replace the quantifier with the question mark
+const regex = /^[a-zA-Z]?\d{4,6}$/;
