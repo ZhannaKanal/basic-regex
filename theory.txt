@@ -234,3 +234,5 @@ const regex = /^[a-zA-Z]?\d{4,6}$/;
 console.log(regex.test("az12345")); // false
 console.log(regex.test("a1234")); // true
 console.log(regex.test("1234567")); // false
+If we need to allow that before the numbers will be any number of letter.
+We can use {0,} means min 0, and not defined max
