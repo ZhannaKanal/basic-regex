@@ -231,3 +231,6 @@ const regex = /^[a-zA-Z]{0,1}\d{4,6}$/;
 But there's actually a special shorthand quantifier for a single operational char - the question mark(?).
 Let's replace the quantifier with the question mark
 const regex = /^[a-zA-Z]?\d{4,6}$/;
+console.log(regex.test("az12345")); // false
+console.log(regex.test("a1234")); // true
+console.log(regex.test("1234567")); // false
