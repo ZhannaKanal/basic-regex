@@ -224,3 +224,5 @@ If you want do regex minimum 4 maximum 6 digit
 const regex = /^\d{4,6}$/;
 console.log(regex.test("123456")); // true
 console.log(regex.test("1234567")); // false
+const regex = /^[a-zA-Z]\d{4,6}$/; //Identifiers can start with a letter. 
+But now we mandate the presence of a letter. 
