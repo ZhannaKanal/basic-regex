@@ -245,3 +245,4 @@ const = /^[a-zA-Z]+\d{4,6}$/;
 console.log(regex.test("a1234")); // true
 console.log(regex.test("12345")); // false
 console.log(regex.test("az12345")); // true
+Now the identifiers that do not start with at least one letter fail, regardless of how many numbers there are.
