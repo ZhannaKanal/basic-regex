@@ -238,3 +238,10 @@ If we need to allow that before the numbers will be any number of letter.
 We can use {0,} means min 0, and not defined max
 But this method is so long, for this we have shorthand "match the previous char zero or more times" - asterisk(*)
 const regex = /^[a-zA-Z]*\d{4,6}$/;
+now we successfully match any identifier with zero or more letters followed by four to six numbers. But it turns out this is crashing our system, 
+we actually have to require at least one letter.
+we could use a quantifier with a minimum of one and no defined maximum, or we could use yet another special syntax- the plus (+) symbol:
+const = /^[a-zA-Z]+\d{4,6}$/;
+console.log(regex.test("a1234")); // true
+console.log(regex.test("12345")); // false
+console.log(regex.test("az12345")); // true
