@@ -250,3 +250,18 @@ Now the identifiers that do not start with at least one letter fail, regardless 
 Capturing groups and Backreferences
 Capturing groups allows you to "capture" a portion of the matched string to use however you might need.
 Capturing groups are defined by parentheses containing the pattern to capture, with no leading characters like a lookahead.
+Let's capture the code from our freeCodeCamp reg expression.
+We'll enclose code in parentheses and define it as a capture group:
+const regex = /free(code)camp/i;
+console.log(regex.test("freecodecamp")); //true
+to confirm the behavior we can test it against a freecodecamp string
+but this doesnt actually make use of our captured group, let's use match
+console.log("freecodecamp".match(regex));
+// [
+//   'freecodecamp',
+//   'code', <--
+//   index: 0,
+//   input: 'freecodecamp',
+//   groups: undefined
+// ]
+we can see that our match array has a second element, which is the portion of the string which was captured by our capture group.
