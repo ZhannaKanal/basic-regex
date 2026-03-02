@@ -246,3 +246,7 @@ console.log(regex.test("a1234")); // true
 console.log(regex.test("12345")); // false
 console.log(regex.test("az12345")); // true
 Now the identifiers that do not start with at least one letter fail, regardless of how many numbers there are.
+
+Capturing groups and Backreferences
+Capturing groups allows you to "capture" a portion of the matched string to use however you might need.
+Capturing groups are defined by parentheses containing the pattern to capture, with no leading characters like a lookahead.
