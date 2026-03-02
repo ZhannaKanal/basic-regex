@@ -265,3 +265,11 @@ console.log("freecodecamp".match(regex));
 //   groups: undefined
 // ]
 we can see that our match array has a second element, which is the portion of the string which was captured by our capture group.
+Capture groups are often used when replacing contents of a string.
+We're going to turn freecodecamp into paidcodeworld
+const regex = /free(code)camp/i;
+console.log("freecodecamp".replace(regex, "paidcodeworld"));
+this works on its own, but what if we didnt know how many o's were in code? If we need a quantifier for one or more o's
+const regex = /free(co+de)camp/i;
+console.log("freecoooooodecamp".replace(regex, "paidcodeworld"));
+we're getting paidcodeworld as our result.
