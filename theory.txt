@@ -273,4 +273,4 @@ this works on its own, but what if we didnt know how many o's were in code? If w
 const regex = /free(co+de)camp/i;
 console.log("freecoooooodecamp".replace(regex, "paidcodeworld"));
 we're getting paidcodeworld as our result.
-туц ипк nbg имп иап тир
+туц ипк nbg имп иап тир три
