@@ -272,4 +272,4 @@ console.log("freecodecamp".replace(regex, "paidcodeworld"));
 this works on its own, but what if we didnt know how many o's were in code? If we need a quantifier for one or more o's
 const regex = /free(co+de)camp/i;
 console.log("freecoooooodecamp".replace(regex, "paidcodeworld"));
-we're getting paidcodeworld as our result. vhb рол апр про мро ghhj рпо ghj
+we're getting paidcodeworld as our result. vhb рол апр про мро ghhj рпо ghj ghj
